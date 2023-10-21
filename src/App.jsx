@@ -1,23 +1,31 @@
 import { useState } from "react";
 import Home from "./pages/Home/home";
-import Projects from "./pages/Projects/projects";
+import Work from "./pages/Work/work";
 import About from "./pages/About/about";
 import Contact from "./pages/Contact/contact";
 import "./App.css";
+import Navbar from "./components/navbar";
+import FullPageCarousel from "./components/fullpage_carousel";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <p>
-      <div className="font-intrepid bg-[#f6f1eb] text-black  ">
-        <Home></Home>
-        {/*
-        <Projects></Projects>
-        <About></About>
-        <Contact></Contact> */}
-      </div>
-    </p>
+    <div className="container w-full h-full m-auto">
+      {/* <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/work" element={<Work />} />
+          </Routes>
+          <Home></Home>
+        </BrowserRouter> */}
+      <Navbar />
+      <FullPageCarousel home={<Home />} />
+
+      {/* <About /> */}
+    </div>
   );
 }
 
