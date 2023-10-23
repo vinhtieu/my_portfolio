@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        "neue-thin": ["NeueMontreal-Light", "sans-serif"],
         "neue-regular": ["NeueMontreal-Regular", "sans-serif"],
         "neue-medium": ["NeueMontreal-Medium", "sans"],
         "neue-bold": ["NeueMontreal-Bold", "sans"],

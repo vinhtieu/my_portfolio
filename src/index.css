@@ -7,6 +7,12 @@
   src: url("./assets/fonts/Intrepid.ttf");
 }
 @font-face {
+  font-family: "NeueMontreal-Light";
+  src: url("./assets/fonts/NeueMontreal-Light.otf");
+  font-weight: 100;
+  font-style: thin;
+}
+@font-face {
   font-family: "NeueMontreal-Regular";
   src: url("./assets/fonts/NeueMontreal-Regular.otf");
   font-weight: 400;
@@ -28,14 +34,14 @@
   box-sizing: border-box;
 }
 
-body,
-#root {
-  width: 100vw;
-  height: 100vh;
-}
-
 body {
   background: #f6f1eb;
   font-family: "Intrepid", "sans-serif";
   color: black;
+  width: 100vw;
+  height: 100vh;
+}
+#root {
+  width: 100%;
+  height: 100%;
 }
