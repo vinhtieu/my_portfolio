@@ -16,8 +16,11 @@ const createComponents = (condition) => {
 
   return (
     <>
-      <Navbar />
-      <FullPageCarousel home={<Home />} />
+      <Intro position={"absolute top-0 bottom-0 right-0 left-0"} />
+      <div className="z-10 w-full h-full bg-[#f6f1eb] animate-slideInUp">
+        <Navbar />
+        <FullPageCarousel home={<Home />} />
+      </div>
     </>
   );
 };

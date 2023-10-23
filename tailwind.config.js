@@ -10,6 +10,16 @@ export default {
         "neue-bold": ["NeueMontreal-Bold", "sans"],
         intrepid: ["Intrepid", "sans"],
       },
+      animation: {
+        fadeIn: "fadeIn 2.5s",
+        slideInUp: "slideInUp 2s",
+      },
+      keyframes: {
+        slideInUp: {
+          "0%": { transform: "translateY(100%)" },
+          "100%": { transform: "translateY(0%)" },
+        },
+      },
     },
   },
   plugins: ["prettier-plugin-tailwindcss"],

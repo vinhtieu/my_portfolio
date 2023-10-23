@@ -4,7 +4,7 @@ const SLOGAN = `Building the Web, One Pixel at a Time: A Passionate Front-End De
 
 export default function Home() {
   return (
-    <div className="text-[200px] relative w-full h-[calc(100vh-96px)]">
+    <div className="text-[200px] relative w-full h-[calc(100vh-96px)] ">
       <div className="absolute w-full h-2/4 top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] flex flex-col items-center justify-center">
         <span className="block text-center text-[140px] leading-[.9] mb-4">
           Front-end Developer
