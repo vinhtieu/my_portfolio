@@ -11,8 +11,8 @@ export default {
         intrepid: ["Intrepid", "sans"],
       },
       animation: {
-        fadeIn: "fadeIn 2.5s",
-        slideInUp: "slideInUp 2s",
+        fadeIn: "2.5s linear 0s 1 normal both fadeIn",
+        slideInUp: "1.5s ease-out 0s 1 normal both slideInUp",
       },
       keyframes: {
         slideInUp: {
@@ -22,5 +22,5 @@ export default {
       },
     },
   },
-  plugins: ["prettier-plugin-tailwindcss"],
+  plugins: [require("tailwindcss-animation-delay")],
 };

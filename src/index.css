@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+} */
+
 @font-face {
   font-family: "Intrepid";
   src: url("./assets/fonts/Intrepid.ttf");

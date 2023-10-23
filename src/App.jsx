@@ -9,32 +9,14 @@ import Contact from "./pages/Contact/contact";
 import Navbar from "./components/navbar";
 import FullPageCarousel from "./components/fullpage_carousel";
 
-const createComponents = (condition) => {
-  if (condition) {
-    return <Intro />;
-  }
-
+function App() {
   return (
-    <>
-      <Intro position={"absolute top-0 bottom-0 right-0 left-0"} />
-      <div className="z-10 w-full h-full bg-[#f6f1eb] animate-slideInUp">
+    <div className="container w-full h-full m-auto">
+      <Intro />
+      <div className="z-10 w-full h-full bg-[#f6f1eb] animate-slideInUp translate-y-full animation-delay-3000 overflow-hidden">
         <Navbar />
         <FullPageCarousel home={<Home />} />
       </div>
-    </>
-  );
-};
-
-function App() {
-  const [isIntro, setIsIntro] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setIsIntro(false);
-    }, 3000);
-  });
-  return (
-    <div className="container w-full h-full m-auto">
-      {createComponents(isIntro)}
     </div>
   );
 }

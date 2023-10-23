@@ -6,6 +6,7 @@ export default function FullPageCarousel(props) {
     <ReactFullpage
       // licenseKey={"YOUR_KEY_HERE"}
       scrollingSpeed={1000} /* Options here */
+      scrollbar={true}
       anchors={["home-page", "about-page", "work-page", "contact-page"]}
       render={({ state, fullpageApi }) => {
         return (
