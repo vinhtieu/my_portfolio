@@ -13,9 +13,6 @@ export default function FullPageCarousel(props) {
           <ReactFullpage.Wrapper>
             <div className="section" datatype="home-page">
               {props.home}
-              {/* <button onClick={() => fullpageApi.moveSectionDown()}>
-                Click me to move down
-              </button> */}
             </div>
             <div className="section" datatype="about-page">
               <p>Section 2</p>

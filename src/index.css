@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer utilities {
-  .animation-delay-2000 {
-    animation-delay: 2s;
-  }
-} */
-
 @font-face {
   font-family: "Intrepid";
   src: url("./assets/fonts/Intrepid.ttf");
@@ -42,7 +36,8 @@
 
 body {
   background: #f6f1eb;
-  font-family: "Intrepid", "sans-serif";
+  /* font-family: "Intrepid", "sans-serif"; */
+  font-family: "NeueMontreal-Regular", "sans-serif";
   color: black;
   width: 100vw;
   height: 100vh;
